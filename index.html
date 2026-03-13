@@ -59,39 +59,7 @@ Cerrar sesión
         </div>
         </div>
         </header>
-        
-<!-- Autenticación de usuario -->
-        <div id="authContainer" class="mode-selector hidden">
-            <!-- Formulario de inicio de sesión -->
-            <div id="loginForm" class="auth-form">
-                <h2>🚀 Iniciar Sesión</h2>
-                <form onsubmit="handleLogin(); return false;">
-                    <div class="input-group">
-                        <input type="text" id="loginUsername" placeholder="Ingresa tu usuario" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">🚀 Entrar a REIVEL</button>
-                </form>
-                <p>¿No tienes cuenta? <a href="#" onclick="showRegister()">✨ Regístrate aquí</a></p>
-            </div>
 
-            <!-- Formulario de registro -->
-            <div id="registerForm" class="auth-form hidden">
-                <h2>✨ Crear Cuenta</h2>
-                <form onsubmit="handleRegister(); return false;">
-                    <div class="input-group">
-                        <input type="text" id="registerUsername" placeholder="Elige un usuario" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" id="registerPassword" placeholder="Crea una contraseña" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">🎯 Crear Mi Cuenta</button>
-                </form>
-                <p>¿Ya tienes cuenta? <a href="#" onclick="showLogin()">🔑 Inicia sesión</a></p>
-            </div>
-        </div>
         <!-- Main Content -->
         <main class="main-content" id="mainContent">
             <section class="welcome-section">
@@ -130,6 +98,39 @@ Cerrar sesión
                 </div>
             </section>
         </main>
+
+        <!-- Autenticación de usuario -->
+        <div id="authContainer" class="mode-selector hidden">
+            <!-- Formulario de inicio de sesión -->
+            <div id="loginForm" class="auth-form">
+                <h2>🚀 Iniciar Sesión</h2>
+                <form onsubmit="handleLogin(); return false;">
+                    <div class="input-group">
+                        <input type="text" id="loginUsername" placeholder="Ingresa tu usuario" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">🚀 Entrar a REIVEL</button>
+                </form>
+                <p>¿No tienes cuenta? <a href="#" onclick="showRegister()">✨ Regístrate aquí</a></p>
+            </div>
+
+            <!-- Formulario de registro -->
+            <div id="registerForm" class="auth-form hidden">
+                <h2>✨ Crear Cuenta</h2>
+                <form onsubmit="handleRegister(); return false;">
+                    <div class="input-group">
+                        <input type="text" id="registerUsername" placeholder="Elige un usuario" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="registerPassword" placeholder="Crea una contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">🎯 Crear Mi Cuenta</button>
+                </form>
+                <p>¿Ya tienes cuenta? <a href="#" onclick="showLogin()">🔑 Inicia sesión</a></p>
+            </div>
+        </div>
     
 
     <script src="data/subjects.js"></script>
@@ -175,16 +176,3 @@ document.addEventListener("contextmenu", function(e) {
             <p>&copy; 2026 REIVEL - ECOEMS. Todos los derechos reservados.</p>
         </footer>
     </div>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const logged = localStorage.getItem("isLoggedIn");
-
-    if (logged === "true") {
-        document.getElementById("authContainer").classList.add("hidden");
-        document.getElementById("mainContent").style.display = "block";
-    } else {
-        document.getElementById("authContainer").classList.remove("hidden");
-        document.getElementById("mainContent").style.display = "none";
-    }
-});
-</script>
