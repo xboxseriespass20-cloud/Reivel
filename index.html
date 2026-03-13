@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REIVEL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function navigateTo(page) {
+    if (page === 'ecoems') {
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+            window.location.href = 'ecoems.html';
+        } else {
+            alert('Debes iniciar sesión para acceder a ECOEMS.');
+        }
+
+    } else if (page === 'temario') {
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+            window.location.href = 'temario.html';
+        } else {
+            alert('Debes iniciar sesión para acceder al Temario 2026.');
+        }
+
+    } else if (page === 'index') {
+        window.location.href = 'index.html';
+    }
+}
+  
+    </script>
+</head>
+<body>
+    <div id="loginBox">
+</div>
+    <button onclick="logout()" id="logoutButton"
+style="
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    background-color: #ef44d2;   /* rojo */
+    color: white;                /* letras blancas */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+">
+Cerrar sesión
+</button>
+
+    <div class="container">
+        <!-- Header / Navbar -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-container">
+             <img src="img/logo.reivel.png.png" class="logo">
+             <h1>REIVEL</h1>
+        </div>
+        </div>
+        </header>
+        
+<!-- Autenticación de usuario -->
+        <div id="authContainer" class="mode-selector hidden">
+            <!-- Formulario de inicio de sesión -->
+            <div id="loginForm" class="auth-form">
+                <h2>🚀 Iniciar Sesión</h2>
+                <form onsubmit="handleLogin(); return false;">
+                    <div class="input-group">
+                        <input type="text" id="loginUsername" placeholder="Ingresa tu usuario" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">🚀 Entrar a REIVEL</button>
+                </form>
+                <p>¿No tienes cuenta? <a href="#" onclick="showRegister()">✨ Regístrate aquí</a></p>
+            </div>
+
+            <!-- Formulario de registro -->
+            <div id="registerForm" class="auth-form hidden">
+                <h2>✨ Crear Cuenta</h2>
+                <form onsubmit="handleRegister(); return false;">
+                    <div class="input-group">
+                        <input type="text" id="registerUsername" placeholder="Elige un usuario" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="registerPassword" placeholder="Crea una contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">🎯 Crear Mi Cuenta</button>
+                </form>
+                <p>¿Ya tienes cuenta? <a href="#" onclick="showLogin()">🔑 Inicia sesión</a></p>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <main class="main-content" id="mainContent">
+            <section class="welcome-section">
+                <h2>Bienvenido</h2>
+                <p>Prepárate para tus exámenes con nuestras herramientas.</p>
+            </section>
+
+            <!-- Secciones Educativas -->
+            <section class="sections-container">
+                <h2 class="section-title">¿Que quieres aprender hoy?</h2>
+                
+                <div class="cards-grid">
+                    <!-- ECOEMS Card -->
+                    <div class="card" data-section="ecoems">
+                        <div class="card-icon">📚</div>
+                        <h3>ECOEMS 2026</h3>
+                        <p>Examenes completos y mas de 50 reactivos de cada materia.</p>
+                        <button class="btn btn-primary" onclick="navigateTo('ecoems')">Ir a ECOEMS</button>
+                    </div>
+
+                    <!-- Temario 2026 Card -->
+                <div class="card" data-section="sec1">
+                        <div class="card-icon">📖</div>
+                        <h3>Temario 2026</h3>
+                        <p>Todos los temas resueltos para el examen de ecoems 2026</p>
+                        <button class="btn btn-primary" onclick="window.location.href='temario.html'">Ir al Temario</button>
+                    </div>
+
+                    <!-- Guia 2025(UNAM-IPN) Card -->
+                    <div class="card" data-section="Guia2025">
+                        <div class="card-icon">📝</div>
+                        <h3>Guía 2025 (UNAM-IPN)</h3>
+                        <p>Todos los temas que vendran en el examen ecoems 2026</p>
+                        <button class="btn btn-primary" onclick="window.location.href='guia.html'">Ir a la Guía</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+
+    <script src="data/subjects.js"></script>
+    <script src="data/exam-questions.js"></script>
+    <script src="data/practice-questions.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/exam-mode.js"></script>
+    <script src="js/practice-mode.js"></script>
+    <script src="js/main.js"></script>
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+question.addEventListener("click", () => {
+
+const answer = question.nextElementSibling;
+
+if(answer.style.maxHeight){
+answer.style.maxHeight = null;
+} else {
+answer.style.maxHeight = answer.scrollHeight + "px";
+}
+
+});
+});
+</script><script>
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+});
+</script>
+
+</body>
+</section>
+
+</html>
+<!-- Footer -->
+        <footer>
+  <a href="privacidad.html">Política de privacidad</a>
+  |
+  <a href="terminos.html">Términos de uso</a>
+</footer>
+        <footer class="footer">
+            <p>&copy; 2026 REIVEL - ECOEMS. Todos los derechos reservados.</p>
+        </footer>
+    </div>
