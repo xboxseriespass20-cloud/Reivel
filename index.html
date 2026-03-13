@@ -140,18 +140,6 @@ Cerrar sesión
     <script src="js/practice-mode.js"></script>
     <script src="js/main.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const logged = localStorage.getItem("isLoggedIn");
-
-    if (logged === "true") {
-        document.getElementById("authContainer").classList.add("hidden");
-        document.getElementById("mainContent").style.display = "block";
-    } else {
-        document.getElementById("authContainer").classList.remove("hidden");
-        document.getElementById("mainContent").style.display = "none";
-    }
-});
-</script>
 const questions = document.querySelectorAll(".faq-question");
 
 questions.forEach(question => {
@@ -187,3 +175,16 @@ document.addEventListener("contextmenu", function(e) {
             <p>&copy; 2026 REIVEL - ECOEMS. Todos los derechos reservados.</p>
         </footer>
     </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const logged = localStorage.getItem("isLoggedIn");
+
+    if (logged === "true") {
+        document.getElementById("authContainer").classList.add("hidden");
+        document.getElementById("mainContent").style.display = "block";
+    } else {
+        document.getElementById("authContainer").classList.remove("hidden");
+        document.getElementById("mainContent").style.display = "none";
+    }
+});
+</script>
