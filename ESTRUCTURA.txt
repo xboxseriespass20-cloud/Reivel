@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ESTRUCTURA DEL PROYECTO REIVEL.WEB
 ===================================
 
@@ -236,3 +237,243 @@ Simplemente abre start.html o index.html en tu navegador.
 ===================================
 Fin de documento de estructura
 ===================================
+=======
+ESTRUCTURA DEL PROYECTO REIVEL.WEB
+===================================
+
+REIVEL.WEB/
+│
+├── 📄 start.html                    ← ABRIR PRIMERO
+├── 📄 index.html                    ← Página Principal
+├── 📄 ecoems.html                   ← Módulo ECOEMS
+│
+├── 📁 css/
+│   └── 🎨 style.css                 ← Estilos (CSS responsivo)
+│
+├── 📁 js/
+│   ├── 🔧 main.js                   ← Lógica principal
+│   ├── 📝 exam-mode.js              ← Lógica de examen
+│   ├── 📚 practice-mode.js          ← Lógica de práctica
+│   └── ⚙️ utils.js                  ← Funciones auxiliares
+│
+├── 📁 data/
+│   ├── 📋 subjects.js               ← Configuración de materias
+│   ├── ❓ exam-questions.js         ← 128 preguntas de examen
+│   └── ❓ practice-questions.js     ← 550+ preguntas de práctica
+│
+├── 📖 README.md                     ← Documentación completa
+├── 📖 INSTRUCCIONES.md              ← Guía de uso detallada  
+├── 📖 INICIO.md                     ← Inicio rápido
+├── 📖 GUIA_RAPIDA.txt               ← Referencia rápida
+└── 📄 ESTRUCTURA.txt                ← Este archivo
+
+===================================
+ESTADÍSTICAS DEL PROYECTO
+===================================
+
+Archivos HTML:          3 (start, index, ecoems)
+Archivos CSS:           1 (style.css)
+Archivos JavaScript:    4 (main, exam-mode, practice-mode, utils)
+Archivos de datos:      3 (subjects, exam-questions, practice-questions)
+Documentación:          4 archivos
+
+Total de archivos:      15
+
+Líneas de código aproximadas:
+- HTML:                 500+ líneas
+- CSS:                  1,200+ líneas
+- JavaScript:           2,500+ líneas
+- Datos:                2,000+ líneas
+Total:                  ~6,200 líneas de código
+
+===================================
+CONTENIDO EDUCATIVO
+===================================
+
+Preguntas de Examen:     128 preguntas totales
+├─ Matemáticas:         12 preguntas
+├─ Español:             12 preguntas
+├─ Geografía:           12 preguntas
+├─ Biología:            12 preguntas
+├─ Física:              12 preguntas
+├─ Química:             12 preguntas
+├─ Historia Universal:  6 preguntas
+├─ Historia de México:  6 preguntas
+├─ Habilidad Matemática: 16 preguntas
+├─ Habilidad Verbal:    16 preguntas
+└─ Formación Cívica:    12 preguntas
+
+Preguntas de Práctica:  550+ preguntas totales
+└─ 50 preguntas por cada una de las 11 materias
+
+Total de preguntas:     680+ preguntas educativas
+
+===================================
+FUNCIONALIDADES
+===================================
+
+✓ Modo Examen (128 preguntas completas)
+✓ Modo Práctica (por materia, 50 preguntas)
+✓ Selección de respuestas con click o teclado
+✓ Navegación con botones y flechas del teclado
+✓ Barra de progreso visual
+✓ Cálculo automático de calificaciones
+✓ Resultados detallados por materia
+✓ Almacenamiento automático (localStorage)
+✓ Interfaz completamente responsiva
+✓ Compatible con todos los navegadores modernos
+✓ Soporte para acceso offline
+✓ Sin publicidad
+✓ Sin registro necesario
+
+===================================
+NAVEGADORES SOPORTADOS
+===================================
+
+✓ Google Chrome 90+
+✓ Mozilla Firefox 88+
+✓ Apple Safari 14+
+✓ Microsoft Edge 90+
+✓ Chrome Android 90+
+✓ Safari iOS 14+
+✓ Cualquier navegador moderno con JavaScript
+
+===================================
+REQUISITOS TÉCNICOS
+===================================
+
+Mínimos:
+- JavaScript habilitado
+- localStorage habilitado
+- 5MB de espacio en disco
+- Conexión a internet (solo para descarga inicial)
+
+Recomendados:
+- Navegador actualizado (2023+)
+- RAM: 512MB+
+- Conexión a internet rápida
+
+===================================
+CAPACIDADES DE ALMACENAMIENTO
+===================================
+
+Datos guardados localmente:
+- Estado del examen actual
+- Respuestas del usuario
+- Progreso en preguntas
+- Materia de práctica seleccionada
+- Tiempo de inicio
+
+Espacio usado: ~100KB máximo por sesión
+
+===================================
+VERSIÓN Y ACTUALIZACIÓN
+===================================
+
+Versión actual: 1.0
+Fecha de lanzamiento: Marzo 2026
+Última actualización: Marzo 2026
+Versión navegador mínima: JavaScript ES6
+
+===================================
+CÓMO INSTALAR/DESCARGAR
+===================================
+
+1. La carpeta REIVEL.WEB contiene todos los archivos
+2. No requiere instalación
+3. Simplemente abre cualquier archivo HTML en un navegador
+4. Se recomienda mantener la estructura de carpetas igual
+
+===================================
+SOPORTE Y AYUDA
+===================================
+
+Para comenzar:
+→ Lee INICIO.md (inicio rápido)
+→ Lee INSTRUCCIONES.md (guía completa)
+→ Lee GUIA_RAPIDA.txt (referencia rápida)
+→ Lee README.md (información técnica)
+
+Para problemas técnicos:
+1. Intenta otro navegador
+2. Limpia cache (Ctrl+Shift+Supr)
+3. Recarga la página (F5)
+4. Verifica JavaScript habilitado
+
+===================================
+CARACTERÍSTICAS FUTURAS PLANEADAS
+===================================
+
+□ Módulos de Secundaria 1°, 2° y 3°
+□ Sistema de usuarios y autenticación
+□ Estadísticas avanzadas y gráficos
+□ Explicaciones detalladas por pregunta
+□ Modo tutor con retroalimentación
+□ Base de datos en línea (opcional)
+□ App móvil nativa
+□ Sincronización entre dispositivos
+□ Pruebas prediagnosticas
+□ Recomendaciones personalizadas
+□ Certificados digitales
+
+===================================
+CRÉDITOS Y AGRADECIMIENTOS
+===================================
+
+Desarrollado para: Estudiantes de Educación Media en México
+Propósito: Preparación educativa gratuita para ECOEMS
+Basado en: Formato oficial del examen ECOEMS
+Licencia: Uso educativo gratuito
+
+===================================
+INICIO RÁPIDO
+===================================
+
+Paso 1: Localizar el archivo
+→ Busca la carpeta REIVEL.WEB
+
+Paso 2: Abrir aplicación
+→ Abre: start.html o index.html
+
+Paso 3: Seleccionar modo
+→ Elige: Examen o Práctica
+
+Paso 4: Responder preguntas
+→ Haz clic en opciones (A, B, C o D)
+
+Paso 5: Ver resultados
+→ Al finalizar obtendrás tu calificación
+
+¡LISTO! Ya estás practicando para ECOEMS 🎓
+
+===================================
+INFORMACIÓN DE CONTACTO
+===================================
+
+El proyecto es de código limpio y libre
+Si tienes sugerencias, mejoras o correcciones:
+Consulta la documentación para más detalles
+
+===================================
+ÚLTIMA ACTUALIZACIÓN
+===================================
+
+Verificado el: Marzo 2026
+Estado: ✓ Totalmente funcional
+Todos los archivos: ✓ En su lugar
+Estructura: ✓ Correcta
+Listo para usar: ✓ SÍ
+
+===================================
+¡BIENVENIDO A REIVEL!
+===================================
+
+Tu plataforma de preparación para ECOEMS está lista.
+Simplemente abre start.html o index.html en tu navegador.
+
+¡Que tengas éxito en tu examen! 🎓
+
+===================================
+Fin de documento de estructura
+===================================
+>>>>>>> 78b263f4a9675da64de4831e875036cd7a44d406

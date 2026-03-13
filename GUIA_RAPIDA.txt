@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ================================================================================
                          REIVEL - GUÍA RÁPIDA
                 Plataforma Educativa para Preparación ECOEMS
@@ -222,3 +223,229 @@ No se permite venta o distribución comercial.
 ================================================================================
 ¡BUENA SUERTE EN TU PREPARACIÓN PARA ECOEMS! 🎓
 ================================================================================
+=======
+================================================================================
+                         REIVEL - GUÍA RÁPIDA
+                Plataforma Educativa para Preparación ECOEMS
+================================================================================
+
+ARCHIVOS PRINCIPALES:
+- start.html        ← Abrir esto primero (panel de inicio)
+- index.html        ← Página principal
+- ecoems.html       ← Módulo ECOEMS
+
+CARPETAS:
+- css/              Estilos (diseño de la interfaz)
+- js/               Lógica (funcionalidad de la aplicación)  
+- data/             Preguntas (contenido educativo)
+
+================================================================================
+CÓMO EMPEZAR
+================================================================================
+
+OPCIÓN 1 - Más fácil (Recomendado):
+1. Busca "REIVEL.WEB" en tu explorador de archivos
+2. Abre el archivo "start.html" haciendo doble clic
+3. ¡Listo! Se abrirá tu navegador con la aplicación
+
+OPCIÓN 2 - Desde navegador:
+1. Abre Chrome/Firefox/Safari
+2. Arrastra el archivo "index.html" dentro del navegador
+3. ¡Listo!
+
+OPCIÓN 3 - Ctrl+O:
+1. Abre tu navegador
+2. Presiona Ctrl+O (o Cmd+O en Mac)
+3. Selecciona "index.html" o "start.html"
+4. ¡Listo!
+
+================================================================================
+QUÉ PUEDES HACER
+================================================================================
+
+MODO EXAMEN:
+• 128 preguntas distribuidas en 11 materias
+• Simula el examen real de ECOEMS
+• Ver tu calificación al finalizar
+• Resultados por materia
+
+MODO PRÁCTICA:  
+• Elige una materia para practicar
+• 50 preguntas por tema
+• Practica sin límite de tiempo
+• Mejora en áreas débiles
+
+11 MATERIAS:
+1. Matemáticas
+2. Español
+3. Geografía
+4. Biología
+5. Física
+6. Química
+7. Historia Universal
+8. Historia de México
+9. Habilidad Matemática
+10. Habilidad Verbal
+11. Formación Cívica y Ética
+
+================================================================================
+ATAJOS DE TECLADO
+================================================================================
+
+Flecha Izquierda  → Pregunta anterior
+Flecha Derecha    → Siguiente pregunta
+1, 2, 3, 4        → Seleccionar opción A, B, C o D
+
+================================================================================
+REQUISITOS MÍNIMOS
+================================================================================
+
+Navegador: Chrome, Firefox, Safari o Edge (actualizado)
+JavaScript: Debe estar habilitado
+Storage: Almacenamiento local (para guardar progreso)
+Pantalla: Cualquier tamaño (compatible móvil)
+
+================================================================================
+SI ALGO NO FUNCIONA
+================================================================================
+
+Las preguntas no aparecen:
+• Recarga la página (F5)
+• Limpia el caché (Ctrl+Shift+Supr en Chrome)
+• Intenta con otro navegador
+
+La interfaz se ve rara:
+• Presiona Ctrl+0 para resetear el zoom
+• Agrega la ventana del navegador
+• Recarga la página
+
+No se guarda el progreso:
+• Verifica que localStorage esté habilitado
+• Intenta en modo normal (no incógnito)
+
+================================================================================
+ESTADÍSTICAS
+================================================================================
+
+Total de preguntas examen: 128
+Total de preguntas práctica: 550+ (50 por materia)
+Tiempo estimado examen: 2-3 horas
+Tiempo de práctica: Variable según el tema
+
+Escala de calificación:
+90-100%  → Excelente
+80-89%   → Muy bien
+70-79%   → Bien
+60-69%   → Aceptable
+0-59%    → Necesita mejorar
+
+================================================================================
+CARACTERÍSTICAS PRINCIPALES
+================================================================================
+
+✓ Interfaz moderna y clara
+✓ Completamente responsiva (móvil, tablet, PC)
+✓ Almacenamiento automático de progreso
+✓ Preguntas aleatorias cada sesión
+✓ Resultados detallados por materia
+✓ Navegación con teclado y mouse
+✓ Soporte para múltiples idiomas (español)
+✓ Sin publicidad
+✓ Sin necesidad de cuenta
+✓ Funciona sin conexión a internet
+
+================================================================================
+INSTRUCCIONES DETALLADAS
+================================================================================
+
+Ver: INICIO.md o INSTRUCCIONES.md para guías más completas
+Ver: README.md para información técnica
+
+================================================================================
+PRÓXIMAS CARACTERÍSTICAS (Futuro)
+================================================================================
+
+□ Módulos de Secundaria 1°, 2° y 3°
+□ Sistema de usuarios
+□ Estadísticas avanzadas
+□ Explicaciones de respuestas
+□ App móvil nativa
+□ Sincronización en línea
+
+================================================================================
+CONSEJOS PARA MEJOR DESEMPEÑO
+================================================================================
+
+1. Comienza con Práctica por Materia
+2. Luego intenta el Modo Examen completo
+3. Identifica tus áreas débiles
+4. Practica frecuentemente
+5. Repite los temas difíciles
+6. Estudia sin distracciones
+7. Duerme bien antes de practicar
+
+================================================================================
+INFORMACIÓN GENERAL
+================================================================================
+
+Nombre: REIVEL
+Versión: 1.0
+Fecha de creación: Marzo 2026
+Tipo: Plataforma Educativa Web
+Costo: Gratuito
+Propósito: Preparación para ECOEMS (Examen de Egreso para Educación Media)
+Público objetivo: Estudiantes de Secundaria (3er grado) en México
+
+================================================================================
+COMENZAR AHORA
+================================================================================
+
+1. Abre: start.html o index.html
+2. Haz clic en: ECOEMS
+3. Elige: Examen o Práctica
+4. ¡A practicar!
+
+================================================================================
+PREGUNTAS FRECUENTES
+================================================================================
+
+¿Necesito conexión a internet?
+No, funciona completamente offline.
+
+¿Dónde se guardan mis respuestas?
+En la memoria del navegador (localStorage).
+
+¿Puedo ver las explicaciones?
+En esta versión no, pero será una función futura.
+
+¿Puedo exportar mis resultados?
+Sí, está disponible en el desarrollo (exportResults).
+
+¿Cuántos intentos puedo hacer?
+Infinitos, practi cuantas veces necesites.
+
+¿Es seguro mi progreso?
+Sí, se guarda localmente en tu navegador.
+
+================================================================================
+CONTACTO Y SOPORTE
+================================================================================
+
+Si tienes problemas:
+1. Verifica los requisitos mínimos
+2. Intenta con otro navegador
+3. Limpia el caché del navegador
+4. Descarga la versión más reciente
+
+================================================================================
+LICENCIA Y DERECHOS
+================================================================================
+
+REIVEL es una plataforma educativa gratuita.
+Uso permitido para estudiantes y fines educativos.
+No se permite venta o distribución comercial.
+
+================================================================================
+¡BUENA SUERTE EN TU PREPARACIÓN PARA ECOEMS! 🎓
+================================================================================
+>>>>>>> 78b263f4a9675da64de4831e875036cd7a44d406

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -94,4 +95,102 @@
         }
     </script><script src="temario.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temario 2026 - REIVEL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <button class="btn-back" onclick="navigateTo('index')">← Volver</button>
+                <h1 class="logo">Temario 2026</h1>
+                <div style="width: 80px;"></div>
+            </div>
+        </header>
+        
+
+        <!-- Materias -->
+        <section class="subjects-section">
+            <h1 style="text-align:center;">Descarga el temario</h1>
+            <div class="cards-grid subjects-grid">
+                <div class="card subject-card" onabort="showTopics('temario')">
+                    <div class="card-icon">📔</div>
+                    <h3>Temario Resuelto 2026</h3>
+                    <p>Descarga el PDF para obtener todo el temario resuelto para tu examen de admision 2026</p>
+                    <a href="Temario-resuelto.pdf" download class="btn-pdf">Descargar Temario PDF</a>
+                </div>
+
+                <style>
+                    .btn-pdf{
+                    display:inline-block;
+                    padding:12px 20px;
+                    background:#5ce639;
+                    color:white;
+                    text-decoration:none;
+                    border-radius:10px;
+                    font-weight:bold;
+}
+                    .btn-pdf:hover{
+                    background:#c1121f;
+}
+</style>
+                
+                
+            </div>
+        </section>
+
+        <!-- Temas de la materia -->
+        <section id="topicsSection" class="topics-section hidden">
+            <button class="btn-back" onclick="backToSubjects()">← Volver a materias</button>
+            <h2 id="topicTitle">Materia</h2>
+            <ul id="topicsList">
+                <!-- Temas se generarán dinámicamente -->
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 REIVEL - Temario. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+
+        function showTopics(subject) {
+            document.querySelector('.subjects-section').classList.add('hidden');
+            const topicsSection = document.getElementById('topicsSection');
+            topicsSection.classList.remove('hidden');
+
+            const title = document.getElementById('topicTitle');
+            title.textContent = subject.charAt(0).toUpperCase() + subject.slice(1);
+
+            const list = document.getElementById('topicsList');
+            list.innerHTML = '';
+            topicsData[subject].forEach(topic => {
+                const li = document.createElement('li');
+                li.textContent = topic;
+                list.appendChild(li);
+            });
+        }
+
+        function backToSubjects() {
+            document.getElementById('topicsSection').classList.add('hidden');
+            document.querySelector('.subjects-section').classList.remove('hidden');
+        }
+
+        function navigateTo(page) {
+            if (page === 'index') window.location.href = 'index.html';
+        }
+    </script><script src="temario.js"></script>
+</body>
+>>>>>>> 78b263f4a9675da64de4831e875036cd7a44d406
 </html>
